@@ -8,3 +8,40 @@ body {
   z-index: 10;
   position: relative;
 }
+
+
+
+
+
+.flex-containerr {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.for_flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.for_flex>div {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.flex-containerr::-webkit-scrollbar {
+  height: 7px;
+  /* Width of the vertical scrollbar */
+}
+
+.flex-containerr::-webkit-scrollbar-thumb {
+  background-color: #006FB9;
+  /* Color of the scrollbar thumb */
+  border-radius: 5px;
+  /* Rounded corners for the thumb */
+}
+
+.flex-containerr::-webkit-scrollbar-track {
+  background-color: #F2F4F7;
+  /* Color of the scrollbar track */
+}

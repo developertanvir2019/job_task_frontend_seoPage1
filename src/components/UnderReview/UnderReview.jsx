@@ -1,16 +1,14 @@
 import React from 'react'
 import CommonCard from '../CommonCard/CommonCard'
-import './DoingCard.css'
 
-const DoingCard = () => {
+const UnderReview = () => {
     return (
         <div className='incomplete_card'>
 
             {/* Header */}
             <div className='flex justify-between px-2 items-center py-3'>
                 <div className="capsule-container">
-                    <div className="capsule_doing"></div>
-                    <span className="text font-semibold text-gray-500">Doing</span>
+                    <span className="text font-semibold text-gray-500">Under Review</span>
                 </div>
                 <h3 className='text-xl font-semibold text-gray-600'>0</h3>
             </div>
@@ -22,11 +20,9 @@ const DoingCard = () => {
                 <CommonCard />
                 <CommonCard />
                 <CommonCard />
-                <CommonCard />
-                <CommonCard />
             </div>
         </div>
     )
 }
 
-export default DoingCard
+export default UnderReview

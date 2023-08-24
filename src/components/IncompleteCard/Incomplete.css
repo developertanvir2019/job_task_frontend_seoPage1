@@ -6,7 +6,7 @@
 
 .all_card {
     overflow-y: scroll;
-    height: 95vh;
+    height: 90vh;
 }
 
 .all_card::-webkit-scrollbar {
