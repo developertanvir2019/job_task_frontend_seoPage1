@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
+.footer-index {
+  z-index: 10;
+  position: relative;
+}

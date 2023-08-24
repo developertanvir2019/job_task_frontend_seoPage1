@@ -1,8 +1,29 @@
 .incomplete_card {
-    height: 95vh;
+    height: 100vh;
     background-color: #F2F4F7;
-    overflow-y: scroll;
     width: 250px !important;
+}
+
+.all_card {
+    overflow-y: scroll;
+    height: 95vh;
+}
+
+.all_card::-webkit-scrollbar {
+    width: 7px;
+    /* Width of the vertical scrollbar */
+}
+
+.all_card::-webkit-scrollbar-thumb {
+    background-color: #006FB9;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    /* Rounded corners for the thumb */
+}
+
+.all_card::-webkit-scrollbar-track {
+    background-color: #F2F4F7;
+    /* Color of the scrollbar track */
 }
 
 /* styles.css */
@@ -14,7 +35,7 @@
 .capsule {
     position: relative;
     width: 20px;
-    height: 26px;
+    height: 24px;
     background-color: #D21010;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
