@@ -22,8 +22,6 @@ const Incomplete = () => {
                 <CommonCard />
                 <CommonCard />
                 <CommonCard />
-                <CommonCard />
-                <CommonCard />
             </div>
         </div>
 

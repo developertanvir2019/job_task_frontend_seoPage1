@@ -21,8 +21,6 @@ const TodoCard = () => {
                 <CommonCard />
                 <CommonCard />
                 <CommonCard />
-                <CommonCard />
-                <CommonCard />
             </div>
         </div>
 

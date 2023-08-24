@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './CommonCard.css'
 import { FiDatabase } from 'react-icons/fi';
 import { AiOutlineLink } from 'react-icons/ai';
@@ -29,12 +29,33 @@ const CommonCard = () => {
         });
 
         try {
-            await axios.post('http://localhost:5000/upload', formData);
+            const response = await axios.post('https://hero-server-july.vercel.app/upload', formData);
+            console.log('success', response.data);
             toast.success('Files uploaded successfully');
+            setSelectedFiles([])
         } catch (error) {
             toast.error('Error uploading files');
+            setSelectedFiles([])
         }
     };
+
+
+
+    // fetch all files
+    const [files, setFiles] = useState([]);
+
+    useEffect(() => {
+        async function fetchFiles() {
+            try {
+                const response = await axios.get('https://hero-server-july.vercel.app/files'); // Replace with your backend route
+                setFiles(response.data.files);
+            } catch (error) {
+                console.error('Error fetching files', error);
+            }
+        }
+
+        fetchFiles();
+    }, [selectedFiles]);
 
 
     return (
@@ -73,7 +94,7 @@ const CommonCard = () => {
                     </div>
                     <div className='flex text-small font-semibold text-gray-500 items-center'>
                         <div onClick={openModal}>   <AiOutlineLink /></div>
-                        <p>25</p>
+                        <p>{files?.length}</p>
                     </div>
                     <div className='flex text-small font-semibold text-gray-500 items-center'>
                         <BiCalendar />
