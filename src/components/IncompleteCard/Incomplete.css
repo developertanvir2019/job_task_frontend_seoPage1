@@ -1,0 +1,26 @@
+.incomplete_card {
+    height: 95vh;
+    background-color: #F2F4F7;
+    overflow-y: scroll;
+    width: 250px !important;
+}
+
+/* styles.css */
+.capsule-container {
+    display: flex;
+    align-items: center;
+}
+
+.capsule {
+    position: relative;
+    width: 20px;
+    height: 26px;
+    background-color: #D21010;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text {
+    margin-left: 8px;
+    /* Adjust spacing between shape and text */
+}
