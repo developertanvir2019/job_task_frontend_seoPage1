@@ -1,0 +1,8 @@
+.capsule_todo {
+    position: relative;
+    width: 20px;
+    height: 24px;
+    background-color: #00B5FF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

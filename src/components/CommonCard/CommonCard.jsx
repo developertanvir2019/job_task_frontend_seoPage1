@@ -31,8 +31,8 @@ const CommonCard = () => {
 
 
             <div className='flex mt-2 justify-between'>
-                <img className='w-6 h-6 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZ8CD0fPA28Fx_GUeHHf0p1w-Tsj3PKp8tQ&usqp=CAU" />
-                <img className='w-6 h-6 rounded-full' src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" />
+                <img className='w-5 h-5 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZ8CD0fPA28Fx_GUeHHf0p1w-Tsj3PKp8tQ&usqp=CAU" />
+                <img className='w-5 h-5 rounded-full' src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" />
                 <p className='bg-gray-200 h-6 w-6 rounded-full text-small font-semibold text-gray-500 flex justify-center items-center'>12+</p>
                 <div className='flex text-small font-semibold text-gray-500 items-center'>
                     <MdOutlineTextsms />

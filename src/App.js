@@ -1,5 +1,6 @@
 import './App.css';
 import Incomplete from './components/IncompleteCard/Incomplete';
+import TodoCard from './components/TodoCard/TodoCard';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
 
 
       {/* main part */}
-      <div>
+      <div className='flex'>
         <Incomplete />
+        <TodoCard />
       </div>
 
 
