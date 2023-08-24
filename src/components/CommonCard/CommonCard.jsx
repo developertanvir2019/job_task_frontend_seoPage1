@@ -29,10 +29,10 @@ const CommonCard = () => {
         });
 
         try {
-            await axios.post('http://localhost:3001/upload', formData);
+            await axios.post('http://localhost:5000/upload', formData);
             toast.success('Files uploaded successfully');
         } catch (error) {
-            toast.error('Error uploading files', error);
+            toast.error('Error uploading files');
         }
     };
 
@@ -104,7 +104,7 @@ const CommonCard = () => {
                     </div>
 
                     <div className="modal-action">
-                        <button onClick={handleFileUpload} className='btn btn-info'>Upload</button>
+                        <button disabled={!selectedFiles?.length} onClick={handleFileUpload} className='btn btn-info'>Upload</button>
                         <button className="btn">Close</button>
                     </div>
                 </form>
